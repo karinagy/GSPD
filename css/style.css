@@ -19,4 +19,97 @@ html {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Картинка + intro*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.intro__title {
+    color: #fff;
+    font-size: 130px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.9;
+}
+
+/*Шапка*/
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/*лого слева, слова справа*/
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    /*отступ сверху*/
+    align-items: center;
+}
+/*Лого*/
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/*Навигация*/
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    /*отступы между словами*/
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    /*плавная смена цвета*/
+    transition: color 0.2s linear;
+}
+
+/*линия при наведении*/
+.nav__link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    /*плавная полоска*/
+    opacity: 0;
+    /**/
+    background-color: gold;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    /*полоска*/
+    transition: opacity 0.2s linear;
+    /**/
+}
 
