@@ -113,3 +113,149 @@ h1, h2, h3, h4, h5, h6 {
     /**/
 }
 
+.nav__link:hover:after {
+    display: block;
+    /*полоска*/
+    opacity: 1;
+    /**/
+}
+
+/*цвет при наведении*/
+.nav__link:hover {
+    color: gold;
+}
+
+/*Вторая секция*/
+.section {
+    padding: 80px 80px;
+    background-color: bisque;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin-bottom: 40px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto 40px;
+    background-color: gold;
+}
+
+/*Картинки*/
+.pic {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Третья секция*/
+.sectionnn {
+    padding: 80px 80px;
+    background-color: #fff;
+}
+
+/*Смещение + градиент*/
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.about__it {
+    width: 300px;
+    background-color: bisque;
+    display: block;
+
+}
+
+.about__img {
+    background: linear-gradient(to bottom, bisque, gold);
+    transition: transform 0.2s linear;
+}
+
+.about__it:hover .about__img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.about__it:hover .about__img img{
+    opacity: 0.1;
+
+}
+
+.about__img img {
+    display: block;
+    transition: opacity 0.2s linear;
+}
+
+/*Четвертая секция*/
+.sectionn {
+    padding: 80px 80px;
+    background-color: bisque;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.pic__itt {
+    white-space: pre-line;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutt__it {
+    width: 150px;
+    background-color: bisque;
+    display: block;
+
+}
+
+.aboutt__img {
+    background: linear-gradient(to bottom, bisque, gold);
+    transition: transform 0.2s linear;
+}
+
+.aboutt__it:hover .aboutt__img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.aboutt__it:hover .aboutt__img img{
+    opacity: 0.1;
+
+}
+
+.aboutt__img img {
+    display: block;
+    transition: opacity 0.2s linear;
+}
+
+/*Подвал*/
+
+.footer__list__item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    /*отступы между словами*/
+    margin: 0 150px;
+}
+
+figcaption {
+    background-color: bisque;
+}
